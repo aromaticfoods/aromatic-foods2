@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-urdu {
+    font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Arabic Typesetting', serif;
+    line-height: 1.8;
+  }
+}
+
+/* Hero animations: transform/opacity only */
+.hero-bg { background: radial-gradient(circle at 80% 20%, #fde68a55, transparent 55%), linear-gradient(135deg, #fffbeb, #fff7ed 60%, #ffffff); }
+.hero-dot { position: absolute; bottom: -12px; width: 6px; height: 6px; border-radius: 9999px; background: #d97706; opacity: 0; animation: hero-rise linear infinite; }
+.hero-float { animation: hero-bob 5s ease-in-out infinite; }
+@keyframes hero-rise { 0% { transform: translateY(0); opacity: 0; } 15% { opacity: .35; } 100% { transform: translateY(-260px); opacity: 0; } }
+@keyframes hero-bob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-10px) rotate(2deg); } }
+@media (prefers-reduced-motion: reduce) { .hero-dot, .hero-float { animation: none; } .hero-dot { display: none; } }

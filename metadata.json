@@ -1,0 +1,6 @@
+{
+  "name": "Aromatic Foods - Authentic Achar & Murabba",
+  "description": "Authentic Pakistani homemade Pickles (Achar) & Fruit Preserves (Murabba) crafted with traditional recipes, pure mustard oil, and natural spices with direct WhatsApp order & COD.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
